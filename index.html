@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Produto Incrível | Compre Agora</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav>
+        <div class="logo">BrandName</div>
+        <div class="nav-links">
+          <a href="#features">Recursos</a>
+          <a href="#pricing">Preços</a>
+          <a href="#testimonials">Depoimentos</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h1>Transforme Sua Vida Com Nosso Produto</h1>
+        <p>A solução definitiva que você estava procurando</p>
+        <button class="cta-button" onclick="scrollToPrice()">Comprar Agora</button>
+      </section>
+
+      <section id="features" class="features">
+        <h2>Recursos Principais</h2>
+        <div class="features-grid">
+          <div class="feature">
+            <h3>Fácil de Usar</h3>
+            <p>Interface intuitiva que qualquer pessoa pode usar</p>
+          </div>
+          <div class="feature">
+            <h3>Resultados Rápidos</h3>
+            <p>Veja resultados em questão de dias</p>
+          </div>
+          <div class="feature">
+            <h3>Suporte Premium</h3>
+            <p>Atendimento 24/7 para suas dúvidas</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="pricing" class="pricing">
+        <h2>Escolha Seu Plano</h2>
+        <div class="pricing-cards">
+          <div class="price-card">
+            <h3>Básico</h3>
+            <div class="price">R$ 97</div>
+            <ul>
+              <li>Recurso 1</li>
+              <li>Recurso 2</li>
+              <li>Recurso 3</li>
+            </ul>
+            <button class="buy-button" onclick="showModal('Básico')">Comprar</button>
+          </div>
+          <div class="price-card featured">
+            <h3>Premium</h3>
+            <div class="price">R$ 197</div>
+            <ul>
+              <li>Tudo do Básico</li>
+              <li>Recurso Premium 1</li>
+              <li>Recurso Premium 2</li>
+              <li>Recurso Premium 3</li>
+            </ul>
+            <button class="buy-button" onclick="showModal('Premium')">Comprar</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonials" class="testimonials">
+        <h2>O Que Dizem Nossos Clientes</h2>
+        <div class="testimonials-grid">
+          <div class="testimonial">
+            <p>"Melhor produto que já usei. Superou todas as expectativas!"</p>
+            <cite>- Maria Silva</cite>
+          </div>
+          <div class="testimonial">
+            <p>"Resultados incríveis em apenas 2 semanas de uso!"</p>
+            <cite>- João Santos</cite>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close-button" onclick="closeModal()">&times;</span>
+        <h2>Finalizar Compra</h2>
+        <p>Plano selecionado: <span id="selected-plan"></span></p>
+        <form id="checkout-form">
+          <input type="text" placeholder="Nome" required>
+          <input type="email" placeholder="Email" required>
+          <button type="submit" class="buy-button">Confirmar Compra</button>
+        </form>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2024 BrandName. Todos os direitos reservados.</p>
+    </footer>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
